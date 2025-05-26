@@ -4,26 +4,46 @@ This repo documents my step-by-step process for diagnosing and fixing performanc
 
 ---
 
-##
-
-- **Issue:** Chrome started running slow (e.g. laggy scrolling, tabs freezing).
-- **System:** Windowns 11 Home 64-bit, HP 255 G8 Notebook PC, and Chrome version info here]
-- **Goal:** Identify root cause(s) and apply sustainable fixes.
+## Background
+- Issue: Chrome started running slow (e.g. laggy scrolling, tabs freezing).
+- System: Windowns 11 Home 64-bit, HP 255 G8 Notebook PC, and Chrome version Version 137.0.7151.41 (Up to date)
+- Goal: Identify root cause and apply fixes.
 
 ---
+## Before applying the following fixes, I uninstalled and reinstalled Google Chrome to eliminate any corruption,
+bad extensions, or misconfigurations that might have been causing slowness. This ensured that all following tests were 
+done on a clean installation.
 
-## 🛠️ Troubleshooting Steps
+## Troubleshooting Steps
 
 ### 1. Baseline Performance Check
-- Task Manager / System Monitor results
-- Chrome Task Manager (Shift+Esc)
-- RAM and CPU usage
+- Task Manager / System Monitor
+- Even with 5 tabs open, system resource usage stays comfortably under recommended limits.
 - Extensions loaded
 
 ### 2. Disable Extensions
 - Disabled all, re-enabled one by one
-- [List extensions and findings]
+  - Application Launcher For Drive (by Google)
+  - Google Docs Offline
 
 ### 3. Clear Cache & Data
-```bash
-chrome://settings/clearBrowserData
+cleared up unnecessary cache, cookies and history
+
+### 4. Chrome Flags (Skipped)
+- Decided to skip adjusting experimental flags for now, as performance had already improved post-reinstallation.
+- Will revisit if issues return.
+
+### 5. Check for background processes
+  - cleared up unnecessary cache, cookies and history
+
+### 6. Malware Scan
+- Ran a full system scan using **Windows Security**.
+- No threats were detected.
+
+--
+
+## Conclusion
+
+After performing the above steps, it became clear that the most effective solution was: Uninstalling and reinstalling Chrome.
+  - This resolved the lag, freezing, and sluggish performance. The clean reinstall likely removed corrupted files, misconfigured
+    settings, or hidden issues related to extensions. Chrome now runs smoothly under normal use conditions.
